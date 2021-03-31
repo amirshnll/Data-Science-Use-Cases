@@ -9,43 +9,37 @@
 - خروجی ها چیست و چگونه این خروجی ها مصرف می شود؟
 - آیا این نشت درآمد مالی است یا مشکل رشد درآمد است؟
 
-## Use Cases By Function
+## کاربردها و کارکردهای آن
 
 ### مارکتینگ
-- Predicting Lifetime Value (LTV)
-  - what for: if you can predict the characteristics of high LTV customers, this supports customer segmentation, identifies upsell opportunties and supports other marketing initiatives
-  - usage: can be both an online algorithm and a static report showing the characteristics of high LTV customers
-- Wallet share estimation
-  - working out the proportion of a customer's spend in a category accrues to a company allows that company to identify upsell and cross-sell opportunities
-  - usage: can be both an online algorithm and a static report showing the characteristics of low wallet share customers
-  - Churn
-  - working out the characteristics of churners allows a company to product adjustments and an online algorithm allows them to reach out to churners
-  - usage: can be both an online algorithm and a statistic report showing the characteristics of likely churners
-  - Customer segmentation
-  - If you can understand qualitatively different customer groups, then we can give them different treatments (perhaps even by different groups in the company). Answers questions like: what makes people buy, stop buying etc
-  - usage: static report
-  - Product mix
-  - What mix of products offers the lowest churn? eg. Giving a combined policy discount for home + auto = low churn
+- پیش بینی ارزش طول عمر
+  - برای چه چیزی: اگر می توانید ویژگی های مشتریان بالای LTV را پیش بینی کنید ، این از تقسیم بندی مشتری پشتیبانی می کند ، فرصت های فروش را شناسایی می کند و از دیگر اقدامات بازاریابی پشتیبانی می کند
+  - استفاده: هم می تواند یک الگوریتم آنلاین باشد و هم یک گزارش ثابت که مشخصات مشتریان بالای LTV را نشان می دهد
+- برآورد سهم کیف پول
+  - کار کردن نسبت هزینه مشتری در یک گروه متعلق به یک شرکت ، به آن شرکت امکان می دهد فرصت های فروش و فروش متقابل را شناسایی کند.
+  - استفاده: هم می تواند یک الگوریتم آنلاین باشد و هم یک گزارش ثابت که مشخصات مشتریان کم کیف پول را نشان می دهد
+  - چرخش
+  - کاربرد: هم می تواند یک الگوریتم آنلاین باشد و هم یک گزارش آماری که مشخصات کرنرهای احتمالی را نشان می دهد
+  - تقسیم بندی مشتریان
+  - اگر می توانید گروه های مختلف مشتری را از لحاظ کیفی درک کنید ، در این صورت می توانیم روش های درمانی متفاوتی با آنها ارائه دهیم (شاید حتی توسط گروه های مختلف شرکت). به سوالاتی از جمله این موارد پاسخ می دهد: آنچه باعث می شود مردم خرید کنند چیست؟ ، یا آنچه خرید را متوقف کنند چیست؟ و ...
+  - کاربرد: گزارش استاتیک
+  - ترکیب محصول
   - کاربرد: الگوریتم آنلاین و گزارش استاتیک
   - فروش متقابل / الگوریتم های توصیه کننده
-  - Given a customer's past browsing history, purchase history and other characteristics, what are they likely to want to purchase in the future?
+  - با توجه به سابقه مرور مشتری در گذشته ، سابقه خرید و سایر خصوصیات ، احتمالاً در آینده قصد خرید چه چیزی را دارند؟
   - کاربرد: الگوریتم آنلاین
   - فروش بیشتر
-  - Given a customer's characteristics, what is the likelihood that they'll upgrade in the future?
-  - usage: online algorithm and static report
-  - بهینه سازی کانال
-  - what is the optimal way to reach a customer with cetain characteristics?
-  - usage: online algorithm and static report
-Discount targeting - What is the probability of inducing the desired behavior with a discount - usage: online algorithm and static report
-- Reactivation likelihood
-  - What is the reactivation likelihood for a given customer
+  - با توجه به ویژگی های مشتری ، احتمال ارتقا آنها در آینده چقدر است؟
   - کاربرد: الگوریتم آنلاین و گزارش استاتیک
+  - بهینه سازی کانال
+  - راه بهینه برای دستیابی به مشتری با ویژگی های خاص چیست؟
+  - کاربرد: الگوریتم آنلاین و گزارش استاتیک
+هدف گذاری تخفیف - احتمال القای رفتار مطلوب با تخفیف چقدر است؟ - کاربرد: الگوریتم آنلاین و گزارش استاتیک
 - بهینه سازی تبلیغات و خرید آگهی
-  - calculating the right price for different keywords/ad slots
+  - محاسبه قیمت مناسب برای کلمات کلیدی مختلف
 
 ### فروش
-- Lead prioritization
-  - What is a given lead's likelihood of closing
+- الویت بندی در رهبری
   - تأثیر درآمد
   - کاربرد: الگوریتم آنلاین و گزارش استاتیک
 - پیش بینی تقاضا
@@ -63,52 +57,50 @@ Discount targeting - What is the probability of inducing the desired behavior wi
 - تشخیص تقلب
   - پیش بینی کلاه برداری با کارت اعتباری
 - بازیابی حساب های پرداختی
-  - Predicting the probably a liability can be recovered given the characteristics of the borrower and the loan
+  - پیش بینی و ارزیابی وام گیرنده با توجه به بدهی های احتمالی
 - ضد پول شویی
-  - Using machine learning and fuzzy matching to detect transactions that contradict AML legislation (such as the OFAC list)
+  - استفاده از یادگیری ماشین و تطبیق فازی برای تشخیص معاملات مغایر با قانون AML (مانند لیست OFAC)
 
-### Customer support
+### پشتیبانی مشتری
 - مراکز تماس
-  - Call routing (ie determining wait times) based on caller id history, time of day, call volumes, products owned, churn risk, LTV, etc.
-- Call center message optimization
-  - Putting the right data on the operator's screen
-- Call center volume forecasting
-  - predicting call volume for the purposes of staff rostering
-
+  - مسیریابی تماس (یعنی تعیین زمان انتظار) براساس سابقه شناسه تماس گیرنده ، زمان روز ، میزان تماس ، محصولات متعلق به آن ، ریسک ریزش ، LTV و غیره
+- بهینه سازی پیام های مرکز تماس
+  - قرار دادن داده های مناسب روی صفحه اپراتور
+- پیش بینی ظرفیت مرکز تماس
+  - پیش بینی ظرفیت تماس برای اهداف لیست کارمندان
 
 ### منابع انسانی
-- Resume screening
-  - scores resumes based on the outcomes of past job interviews and hires
-- Employee churn
-  - predicts which employees are most likely to leave
-- Training recommendation
-  - recommends specific training based of performance review data
-- Talent management
-  - looking at objective measures of employee success
+- بررسی رزومه های شغلی
+  - رزومه ها را براساس نتایج مصاحبه های شغلی گذشته و استخدام ها امتیاز می دهد
+- پیش بینی کارمندان
+  - پیش بینی می کند که کدام کارمندان به احتمال زیاد سازمان را ترک می کنند
+- توصیه های آموزشی
+  - آموزش خاص را بر اساس داده های بررسی عملکرد پیشنهاد می کند
+- مدیریت استعداد
+  - اندازه گیری عینی موفقیت کارکنان
 
 ## Use Cases By Vertical
 
-### Healthcare
-- Claims review prioritization
-  - payers picking which claims should be reviewed by manual auditors
-- Medicare/medicaid fraud
-  - Tackled at the claims processors, EDS is the biggest & uses proprietary tech
+### مراقبت های بهداشتی
+- اولویت بندی ها را بررسی می کنند
+  - مودیانی که ادعا می کنند باید توسط حسابرسان دستی بررسی شوند
+- تشخیص تقلب در مراقبت های پزشکی
 - تخصیص منابع پزشکی
   - مدیریت عملیات بیمارستان
-  - Optimize/predict operating theatre & bed occupancy based on initial patient visits
-- Alerting and diagnostics from real-time patient data
+  - بهینه سازی / پیش بینی اتاق عمل و اشغال تختخواب بر اساس ویزیت های اولیه بیمار
+- هشدار و تشخیص از داده های بیمار در زمان واقعی
   - دستگاه های جاسازی شده یا امبدد دیوایس ها
-  - Exogenous data from devices to create diagnostic reports for doctors
+  - داده های بیرونی از دستگاه ها برای ایجاد گزارش های تشخیصی برای پزشکان
 - انطباق با نسخه
-  - Predicting who won't comply with their prescriptions
-- Physician attrition
-  - Hospitals want to retain Drs who have admitting privileges in multiple hospitals
+  - پیش بینی افرادی که با نسخه هایشان مطابقت ندارند
+- پزشک های معتبر
+  - بیمارستان ها می خواهند دکترهایی را که دارای امتیازهای پذیرش در چندین بیمارستان هستند را حفظ کنند
 - تجزیه و تحلیل بقا
-  - Analyse survival statistics for different patient attributes (age, blood type, gender, etc) and treatments
-- Medication (dosage) effectiveness
-  - Analyse effects of admitting different types and dosage of medication for a disease
+  - تجزیه و تحلیل آمار بقا برای ویژگی های مختلف بیمار (سن ، گروه خون ، جنسیت و غیره) و روش های درمانی
+- اثربخشی دارو (دوز دارو)
+  - اثرات پذیرش انواع مختلف و دوز دارو برای یک بیماری را تجزیه و تحلیل کنید
 - خطر پذیرش مجدد
-  - Predict risk of re-admittance based on patient attributes, medical history, diagnose & treatment
+  - خطر بستری مجدد را براساس ویژگی های بیمار ، سابقه پزشکی ، تشخیص و درمان پیش بینی کنید
 
 ### مصرف کننده مالی
 - تقلب در کارت اعتباری
@@ -116,58 +108,56 @@ Discount targeting - What is the probability of inducing the desired behavior wi
 
 ### خرده فروشی
 - قیمت گذاری
-  - Optimize per time period, per item, per store
-  - Was dominated by Retek, but got purchased by Oracle in 2005. Now Oracle Retail.
-  - JDA is also a player (supply chain software)
+  - بهینه سازی در هر بازه زمانی ، در هر مورد ، در هر فروشگاه
+  - JDA همچنین یک پخش کننده است (نرم افزار زنجیره تأمین)
 - محل فروشگاه های جدید
 - چیدمان محصول در فروشگاه ها
   - این "طرح و برنامه ریزی" نامیده می شود
 - تجارت
-  - when to start stocking & discontinuing product lines
-- Inventory Management (how many units)
-  - In particular, perishable goods
-- Shrinkage analytics
-  - Theft analytics/prevention (http://www.internetretailer.com/2004/12/17/retailers-cutting-inventory-shrink-with-spss-predictive-analytic)
+  - چه زمان شروع به ذخیره سازی و قطع خطوط تولید کنید
+- مدیریت موجودی
+  - به ویژه کالاهای فاسدشدنی
+- تجزیه و تحلیل انقباض
+  - تجزیه و تحلیل / پیشگیری از سرقت (http://www.internetretailer.com/2004/12/17/retailers-cutting-inventory-shrink-with-spss-predictive-analytic)
 - تجزیه و تحلیل گارانتی
-  - Rates of failure for different components
-    - And what are the drivers or parts?
-  - What types of customers buying what types of products are likely to actually redeem a warranty?
+  - نرخ خرابی برای اجزای مختلف
+    - و خرابی درایورها یا قطعات چیست؟
+  - چه نوع مشتری هایی که چه نوع کالایی را خریداری می کنند واقعاً از گارانتی استفاده می کنند؟
 - آنالیز سبد بازار
 - تجزیه و تحلیل بهترین پیشنهاد بعدی
 - الگوهای حمل و نقل فروشگاه
 
 ### بیمه
 - پیش بینی ادعاها
-  - Might have telemetry data
-- Claims handling (accept/deny/audit), managing repairer network (auto body, doctors)
+  - ممکن است داده های مسافت سنجی داشته باشد
+- رسیدگی به ادعاها (قبول / رد / حسابرسی) ، مدیریت شبکه تعمیرات (بدنه خودرو ، پزشکان)
 - حساسیت به قیمت
 - سرمایه گذاری ها
-- Agent & branch performance
+- عملکرد نماینده و شعبه ها
 - دیجیتال مارکتینگ
 
 ### ساخت و ساز
-- Contractor performance
-  - Identifying contractors who are regularly involved in poor performing products
-- Design issue prediction
-  - Predicting that a construction project is likely to have issues as early as possible
+- عملکرد پیمانکار
+  - شناسایی پیمانکارانی که به طور منظم درگیر محصولات ضعیف هستند
+- پیش بینی مسئله طراحی
+  - پیش بینی اینکه یک پروژه ساختمانی احتمالاً در اسرع وقت با مشکلاتی روبرو شود
 
 ### علوم زیستی
-- Identifying biomarkers for boxed warnings on marketed products
+- شناسایی نشانگرهای زیستی برای هشدارهای بسته بندی شده روی محصولات عرضه شده در بازار
 - کشف و تجزیه و تحلیل دارو / مواد شیمیایی
-- Crunching study results
-- Identifying negative responses (monitor social networks for early problems with drugs)
+- شناسایی پاسخ های منفی (نظارت بر شبکه های اجتماعی برای مشکلات اولیه با مواد مخدر)
 - تشخیص توسعه ی تست ها
   - دستگاه های سخت افزاری
   - نرم افزار
 - هدف گذاری تشخیصی سیستم مدیریت ارتباط با مشتری
-- Predicting drug demand in different geographies for different products
-- Predicting prescription adherence with different approaches to reminding patients
+- پیش بینی تقاضای دارو در مناطق جغرافیای مختلف برای محصولات مختلف
+- پیش بینی تبعیت از نسخه با رویکردهای مختلف برای یادآوری بیماران
 - سیگنال های ایمنی
 - بازاریابی شبکه های اجتماعی در مورد رقبا
-- Image analysis or GCMS analysis in a high throughput manner
-- Analysis of clinical outcomes to adapt clinical trial design
+- تجزیه و تحلیل تصویر یا تجزیه و تحلیل GCMS به روش توان بالا
+- تجزیه و تحلیل نتایج بالینی برای انطباق با طراحی کارآزمایی بالینی
 - بهینه سازی قیمت تمام شده کالاها
-- Leveraging molecule database with metabolic stability data to elucidate new stable structures
+- استفاده از پایگاه داده مولکول با داده های پایداری متابولیکی برای روشن سازی ساختارهای پایدار جدید
 
 ### خدمات مهمان داری
 - مدیریت موجودی کالا / قیمت گذاری پویا
@@ -190,10 +180,10 @@ Discount targeting - What is the probability of inducing the desired behavior wi
 
 ### مسافرت
 - برنامه ریزی هواپیما
-- Seat mgmt, gate mgmt
+- مدیریت صندلی ، مدیریت گیت
 - برنامه ریزی خدمه هوایی
 - قیمت گذاری پویا
-- Customer complain resolution (give points in exchange)
+- تحلیل شکایت مشتری
 - موارد مرکز تماس
 - بهینه سازی نگهداری و تعمیر
 - پیش بینی گردشگری
@@ -202,15 +192,15 @@ Discount targeting - What is the probability of inducing the desired behavior wi
 - مدیریت عملکرد
 
 ### اپراتورهای مرکز خرید
-- Predicting tenants capacity to pay based on their sales figures, their industry
-- Predicting the best tenant for an open vacancy to maximise over all sales at a mall
+- پیش بینی ظرفیت پرداخت مستاجران براساس ارقام فروش ، صنعت آنها
+- پیش بینی بهترین مستاجر برای یک جای خالی آزاد برای به حداکثر رساندن فروش بیشتر در یک مرکز خرید
 
 ### آموزش
 - امتیازدهی خودکار به مقالات
 
 ### خدمات رفاهی
-- Optimise Distribution Network Cost Effectiveness (balance Capital 7 Operating Expenditure)
-- Predict Commodity Requirements
+- بهینه سازی اثربخشی شبکه توزیع
+- الزامات کالا را پیش بینی کنید
 
 ### دیگر
 - تحلیل احساسات
@@ -236,19 +226,16 @@ Discount targeting - What is the probability of inducing the desired behavior wi
   - هدف گذاری تخفیف
   - صنعت خدمات مالی
   - بازاریابی تلفنی
-    - Generally as a follow-up to a DM or a churn predictor
   - بازاریابی ایمیلی
 - آفلاین
-  - Call to action w/ unique promotion
-  - Why are people responding- How do I adjust my buy (where, when, how)?
-  - "I'm sure we are wasting half our money here, but the problem is we don't know which ad"
-- Media Mix Optimization
-  - Kantar Group and Nielson are dominant
-  - Hard part of this is getting to the data (good samples & response vars)
+  - دعوت به عمل / تبلیغات یکتا
+  - چرا مردم پاسخ می دهند - چگونه می توانم خرید خود را تنظیم کنم (کجا ، چه زمانی ، چگونه)؟
+  - "من مطمئن هستم که ما نیمی از پول خود را در اینجا هدر می دهیم ، اما مشکل این است که ما نمی دانیم کدام تبلیغ است"
+- بهینه سازی میکس رسانه ها
 
 ### مراقبت های بهداشتی
 - سیستم مدیریت مشتری و بهینه سازی مصرف
-- Claims coding
+- کدگذاری ادعاها
 - تعیین فرمول قیمت گذاری
 - چگونه می توانم شما را مجبور کنم که از کارت من برای پرداخت خودکار استفاده کنید؟
 - مالی
@@ -260,7 +247,7 @@ Discount targeting - What is the probability of inducing the desired behavior wi
 - http://web.archive.org/web/20130818062926/https://www.kaggle.com/wiki/DataScienceUseCases
 
 ## ترجمه ها
-This is also available in other languages:
+این مستندات به زبان های دیگر نیاز در دسترس می باشد:
 - [انگلیسی](https://github.com/amirshnll/Data-Science-Use-Cases/blob/main/README-EN.md)
 - [فارسی](https://github.com/amirshnll/Data-Science-Use-Cases/blob/main/README.md)
 </div>
