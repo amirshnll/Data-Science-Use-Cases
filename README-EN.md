@@ -261,3 +261,8 @@ Discount targeting - What is the probability of inducing the desired behavior wi
 ## References
 - Kaggle
 - http://web.archive.org/web/20130818062926/https://www.kaggle.com/wiki/DataScienceUseCases
+
+## Translations
+This is also available in other languages:
+- [English](https://github.com/amirshnll/Data-Science-Use-Cases/blob/main/README-EN.md)
+- [Persian](https://github.com/amirshnll/Data-Science-Use-Cases/blob/main/README.md)
